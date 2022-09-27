@@ -1,0 +1,18 @@
+.card-item {
+  background-color: rgb(240, 238, 235);
+  border-radius: 12px;
+  color: rgb(0, 28, 73);
+  height: 270px;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  width: 400px;
+  max-width: 430px;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: transform 1s ease;
+  }
+}

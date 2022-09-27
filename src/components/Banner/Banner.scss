@@ -1,0 +1,120 @@
+.mainBody {
+  position: relative;
+  display: grid;
+  height: 1440px;
+
+  .banner-img-container {
+    display: block;
+    overflow: hidden;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    font-weight: 500;
+    color: rgb(0, 28, 73);
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 250px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 14%;
+    margin-top: 150px;
+  }
+  p {
+    color: rgb(0, 28, 73);
+    margin: 0;
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 25px;
+    position: relative;
+    left: 14%;
+    margin-bottom: 10px;
+  }
+  button {
+    background-color: rgb(86, 107, 172);
+    position: relative;
+    left: 14%;
+    padding: 12px 55px;
+    color: white;
+    font-weight: 500;
+    font-size: 10px;
+    border: none;
+    border-radius: 2px;
+    margin: 0;
+  }
+}
+
+.banner-text {
+  text-align: left;
+  text-align: initial;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  padding-top: 88px;
+  padding-bottom: 88px;
+  grid-area: 1/1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mainBody {
+    height: 900px;
+  }
+  .banner-img-container {
+    max-height: 900px;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainBody {
+    position: relative;
+    grid-area: 1/1;
+    height: 500px;
+    justify-self: stretch;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    h1 {
+      justify-content: center;
+      align-items: center;
+      display: block;
+    }
+    p {
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
